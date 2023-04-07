@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OpNode',
-  tagline: 'Simplified password-less authentication platform combined with Ethereum-compatible blockchains',
-  favicon: 'img/favicon.ico',
+  title: 'Unlock the Full Potential of Account Abstraction',
+  tagline: 'The leading Bundler solution for ERC-4337 Infrastructure', 
+  favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 
   // Set the production url of your site here
@@ -69,7 +69,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/opnode-social-card.jpg',
-      metadata: [{name: 'keywords', content: 'bundler, erc-4337'}],
+      metadata: [{name: 'keywords', content: 'bundler, erc-4337, account abstraction, smart contract account, ethereum'}],
       docs: {
         sidebar: {
           hideable: true,
@@ -77,16 +77,21 @@ const config = {
         },
       },
       navbar: {
-        title: 'OpNode',
+        title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/brand/opnode.png',
         },
         items: [
           {
+            to: '/about',
+            position: 'left',
+            label: 'About',
+          },
+          {
             type: 'doc',
             docId: 'intro',
-            position: 'right',
+            position: 'left',
             label: 'Docs',
           },
           {
@@ -117,7 +122,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/',
+                href: 'https://twitter.com/OpNode',
               },
             ],
           },
