@@ -1,5 +1,4 @@
 ### OpNode Landing/Docs - Docusaurus Changelog
 
-## 1.0.1 (2023-04-01)
+## 1.0.0 - Pending Release
 🚀 **New Feature**
-- Release site
