@@ -15,7 +15,10 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--secondary button--lg">
+          <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--secondary button--lg"
+            onReady={() => {
+              console.log('form ready')
+            }}>
             Sign up for our waiting list ⏱️
           </PopupButton>
         </div>

@@ -15,21 +15,6 @@ title: RPC methods
 
 This method is used to submit a User Operation object to the User Operation pool of clients. The reposonse payload will contain the calculated `userOpHash` if and only if the request passes all nessary checks, otherwise the reposonse payload will return an error code with failed message.
 
-
-**Parameters:**
-
-| **Name** | **Type** | **Description** |
-|:--------:|:--------:|:---------------:|
-|Test          |    Test      |       Test          |
-
-
-**Returns**:
-
-| **Name**      | **Type** | **Description** |
-|:--------:|:--------:|:---------------:|
-|   Test       |  Test        |      Test           |
-
-
 Example Request: 
 ```json
 {
