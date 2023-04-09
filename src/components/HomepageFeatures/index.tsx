@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/easy-to-use.svg').default,
     description: (
       <>
       OpNode is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration.
@@ -19,20 +19,20 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Multi-client support',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'ERC-4337 compliant',
+    Svg: require('@site/static/img/compliant.svg').default,
     description: (
       <>
-        OpNode is compatible with multiple Ethereum clients, enabling greater bundler diversity and resilience.
+        OpNode's bundler is fully compliant with the ERC-4337. Plus, our bundler is highly performant, allowing for efficient and reliable transaction processing.
       </>
     ),
   },
   {
-    title: 'Security and reliability',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Multi-client support',
+    Svg: require('@site/static/img/multi-client-support.svg').default,
     description: (
       <>
-        OpNode is designed to be secure and reliable, with built-in features to prevent attacks and bugs.
+        OpNode is compatible with multiple Ethereum clients, enabling greater bundler diversity and resilience.
       </>
     ),
   },
