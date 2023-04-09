@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Unlock the Full Potential of Account Abstraction',
-  tagline: 'The leading Bundler solution for ERC-4337 Infrastructure', 
+  tagline: 'The Next Generation of Blockchain Wallet Infrastructure is Here', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 
@@ -57,7 +57,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-0ZQZQZQZQZ',
+          trackingID: 'G-B5K3TF153M',
           anonymizeIP: true,
         },
       }),

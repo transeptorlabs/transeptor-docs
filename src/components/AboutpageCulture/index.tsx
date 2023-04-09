@@ -12,21 +12,17 @@ type CultureItem = {
 
 const CultureList: CultureItem[] = [
   {
-    title: 'Build with security at the foundation',
-    Svg: require('@site/static/img/laptop-code.svg').default,
+    title: 'Build User-Friendly Infrastructure',
+    Svg: require('@site/static/img/builder-friendly.svg').default,
     description: (
       <>
-        Approach security with rigor and a commitment to first principles, 
-        ensuring that our products are designed with safety at their core.
-        We constantly evaluate and improve our security practices, building 
-        on a foundation of proven principles to create reliable, trustworthy, 
-        and secure products.
+        We strive to make blockchain technology accessible to everyone, regardless of their technical background or level of expertise. This means building products and services that are intuitive and easy to use, while also providing educational resources and support to help users get started.
       </>
     ),
   },
   {
     title: 'Explore unconventional solutions',
-    Svg: require('@site/static/img/artificial-intelligence.svg').default,
+    Svg: require('@site/static/img/innovation.svg').default,
     description: (
       <>
         Real innovation changes the course of industries or even society; we 
@@ -35,11 +31,11 @@ const CultureList: CultureItem[] = [
     ),
   },
   {
-    title: `Protect users who can't protect themselves`,
-    Svg: require('@site/static/img/cha-bubble.svg').default,
+    title: `Building trust through transparency`,
+    Svg: require('@site/static/img/build-trust.svg').default,
     description: (
       <>
-        We prioritize the protection and empowerment of users, using secure technology, constantly seeking user feedback, and prioritizing user experience to ensure that they can participate in the Web3 ecosystem safely and confidently.
+      We prioritize building a strong and supportive community around our products and services. This means fostering an environment of collaboration and open communication, and actively engaging with users to gather feedback and improve the overall experience.
       </>
     ),
   },
