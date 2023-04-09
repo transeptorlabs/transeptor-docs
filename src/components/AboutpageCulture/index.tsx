@@ -16,7 +16,7 @@ const CultureList: CultureItem[] = [
     Svg: require('@site/static/img/builder-friendly.svg').default,
     description: (
       <>
-        We strive to make blockchain technology accessible to everyone, regardless of their technical background or level of expertise. This means building products and services that are intuitive and easy to use, while also providing educational resources and support to help users get started.
+        We strive to make blockchain technology accessible to everyone, regardless of their technical background or level of expertise. By building products and services that are intuitive and easy to use while also providing educational resources and support to help users get started.     
       </>
     ),
   },
@@ -25,17 +25,16 @@ const CultureList: CultureItem[] = [
     Svg: require('@site/static/img/innovation.svg').default,
     description: (
       <>
-        Real innovation changes the course of industries or even society; we 
-        constantly experiment with new ideas and technologies and think outside the box to push the boundaries of what's possible with decentralized applications.
+        Real innovation changes the course of industries or even society; we constantly experiment with new ideas and technologies and think outside the box to push the boundaries of what's possible with decentralized applications.
       </>
     ),
   },
   {
-    title: `Building trust through transparency`,
+    title: `Building Trust through Transparency`,
     Svg: require('@site/static/img/build-trust.svg').default,
     description: (
       <>
-      We prioritize building a strong and supportive community around our products and services. This means fostering an environment of collaboration and open communication, and actively engaging with users to gather feedback and improve the overall experience.
+        We prioritize building a strong and supportive community around our products and services. We aim to foster collaboration through open communication and actively engage with users to gather feedback and improve the overall experience.      
       </>
     ),
   },

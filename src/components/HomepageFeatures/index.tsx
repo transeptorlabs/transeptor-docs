@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/easy-to-use.svg').default,
     description: (
       <>
-      OpNode is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration.
+        OpNode is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration.      
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/compliant.svg').default,
     description: (
       <>
-        OpNode's bundler is fully compliant with the ERC-4337. Plus, our bundler is highly performant, allowing for efficient and reliable transaction processing.
+        OpNode's bundler is fully compliant with the ERC-4337. Our bundler is highly performant, allowing for efficient and reliable transaction processing.     
       </>
     ),
   },
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/multi-client-support.svg').default,
     description: (
       <>
-        OpNode is compatible with multiple Ethereum clients, enabling greater bundler diversity and resilience.
+        OpNode is compatible with multiple Ethereum clients, enabling greater bundler diversity and resilience.      
       </>
     ),
   },

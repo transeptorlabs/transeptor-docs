@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.buttons-left {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
