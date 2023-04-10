@@ -33,7 +33,7 @@ OpNode is easy to set up and use, with a simple Docker-based deployment process 
 3. Run the OpNode docker image alongside your Ethereum client.
 4. Start using OpNode to bundle your transactions and improve the efficiency and security of your Ethereum transactions.
 
-OpNode is compatible with multiple Ethereum clients, making integrating with your existing infrastructure easy.
+OpNode is compatible with multiple Ethereum clients, making integrating your existing infrastructure easy.
 
 <div className="button-left">
     <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"
