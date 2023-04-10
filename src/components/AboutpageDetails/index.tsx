@@ -3,6 +3,8 @@ import clsx from 'clsx';
 
 import sharedStyles from '../component.module.css';
 import styles from './styles.module.css';
+import { PopupButton } from '@typeform/embed-react'
+
 
 export default function AboutpageDetails(): JSX.Element {
   return (
@@ -15,7 +17,15 @@ export default function AboutpageDetails(): JSX.Element {
               <p>
                 At OpNode, we believe in a future where blockchain technology is accessible to everyone and can empower builders to create a better world. We achieve this by building wallet infrastructure that makes it easy for developers and users to participate in the Ethereum network and develop decentralized applications. We aim to make the Ethereum network more accessible and scalable, helping to drive mass adoption of blockchain technology.
               </p>
+              <div>
               <p>Join us in building a more accessible, decentralized, and transparent future for all!</p>
+              <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"
+                onReady={() => {
+                  
+                }}>
+                Sign up for our waiting list ⏱️
+              </PopupButton>
+              </div>
             </div>
             <div className="col col-6">
               <img src={require('@site/static/img/mission.jpg').default} alt="Group of people holding blocks" />
