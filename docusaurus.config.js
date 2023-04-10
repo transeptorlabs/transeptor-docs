@@ -99,6 +99,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            label: 'ERC-4337',
+            href: 'https://eips.ethereum.org/EIPS/eip-4337',
+            position: 'right',
+          },
         ],
       },
       footer: {
