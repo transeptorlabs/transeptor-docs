@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--secondary button--lg"
             onReady={() => {
-              console.log('form ready')
+              
             }}>
             Sign up for our waiting list ⏱️
           </PopupButton>
