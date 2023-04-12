@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h1 className="hero__title">Unlock the Full Potential of Account Abstraction</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--secondary button--lg"
@@ -33,6 +33,7 @@ export default function Home(): JSX.Element {
       description="A modular Typescript implementation of an ERC-4337 Bundler.">
         <meta name="twitter:title" content={`${siteConfig.title}`}/>
         <meta name="twitter:description" content="A modular Typescript implementation of an ERC-4337 Bundler."/>
+      {/* TODO: Add  og:image, twitter:image*/}
       <HomepageHeader />
       <main>
         <HomepageFeatures />

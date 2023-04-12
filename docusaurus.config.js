@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Unlock the Full Potential of Account Abstraction',
+  title: 'OpNode',
   tagline: 'The Next Generation of Blockchain Wallet Infrastructure is Here', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
