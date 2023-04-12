@@ -16,9 +16,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--secondary button--lg"
-            onReady={() => {
-              
-            }}>
+            onReady={() => {}}>
             Sign up for our waiting list ⏱️
           </PopupButton>
         </div>
@@ -32,9 +30,9 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A modular Typescript implementation of an ERC-4337 Bundler.">
         <meta name="twitter:title" content={`${siteConfig.title}`}/>
-        <meta name="twitter:description" content={`${siteConfig.tagline}`}/>
+        <meta name="twitter:description" content="A modular Typescript implementation of an ERC-4337 Bundler."/>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

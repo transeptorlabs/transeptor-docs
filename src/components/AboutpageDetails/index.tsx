@@ -20,9 +20,7 @@ export default function AboutpageDetails(): JSX.Element {
               <div>
               <p>Join us in building a more accessible, decentralized, and transparent future for all!</p>
               <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"
-                onReady={() => {
-                  
-                }}>
+                onReady={() => {}}>
                 Sign up for our waiting list ⏱️
               </PopupButton>
               </div>

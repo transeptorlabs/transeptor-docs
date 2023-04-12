@@ -12,12 +12,10 @@ export default function About(): JSX.Element {
   return (
     <Layout
       title={`About`}
-      description={`The freedom to choose and challenge the status quo is essential for a life of adventure and purpose. When individuals dare to step outside their comfort zones and take risks, they can discover new opportunities for growth and transformation.`}>
+      description={`OpNode is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}>
       <Head>
-        <meta name="keywords" content="password-less, auth"/>
-        <meta property="og:image" content="https://cdn.errandboys.co/images/Original.png" />
-        <meta name="twitter:title" content={`About Us`}/>
-        <meta name="twitter:description" content={`${siteConfig.tagline}`}/>
+        <meta name="twitter:title" content={`About`}/>
+        <meta name="twitter:description" content={`OpNode is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}/>
       </Head>
       <main>
         <AboutpageHero />
