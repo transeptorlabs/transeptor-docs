@@ -13,7 +13,7 @@ title: RPC methods
 
 ### Send User Operation
 
-Clients can use this method to submit a User Operation object to the pool of Bundler clients. The response payload will contain the calculated `userOpHash` if and only if the request passes all necessary checks; otherwise, the response payload will return an error code with a failure message.
+Clients can use this method to submit a UserOperation object to the pool of Bundler clients. The response payload will contain the calculated `userOpHash` if and only if the request passes all necessary checks; otherwise, the response payload will return an error code with a failure message.
 
 Example Request: 
 ```json
