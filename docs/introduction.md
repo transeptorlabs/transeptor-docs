@@ -12,7 +12,7 @@ import { PopupButton } from '@typeform/embed-react'
 ## Why is OpNode Needed?
 The Ethereum ecosystem has grown significantly over the past few years, with more and more applications built on the network. However, this growth has also increased the complexity around users managing EOA. With the introduction of [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337), the Ethereum ecosystem aims to allow users to use smart contract wallets containing arbitrary verification logic instead of EOAs as their primary account. The use of smart contracts can greatly improve the blockchain user experience and lay the foundation for features such as social recovery and gasless transactions.
 
-One of the key challenges facing the mass adoption of EIP4347 is the need for Bundler diversity. EIP4347 infrastructure must allow any Bundler to participate in including account-abstracted user operations to make the infrastructure decentralized. 
+One of the key challenges facing the mass adoption of EIP4337 is the need for Bundler diversity. EIP4337 infrastructure must allow any Bundler to participate in including account-abstracted user operations to make the infrastructure decentralized. 
 
 We have developed OpNode, a TypeScript Bundler implementation compatible with multiple Ethereum clients, to address this challenge. OpNode is fully compliant with ERC-4337 and highly performant, enabling greater bundler diversity for the Ethereum network. With OpNode, builders can benefit from a more resilient and decentralized account abstraction infrastructure, equipping them will tools to handle future challenges of mass adoption.
 
@@ -31,9 +31,7 @@ OpNode is easy to set up and use, with a simple Docker-based deployment process 
 1. Download and install the Ethereum client.
 2. Download the OpNode docker image.
 3. Run the OpNode docker image alongside your Ethereum client.
-4. Start using OpNode to bundle your transactions and improve the efficiency and security of your Ethereum transactions.
-
-OpNode is compatible with multiple Ethereum clients, making integrating your existing infrastructure easy.
+4. Start using OpNode to bundle user operation.
 
 <div className="button-left">
     <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"

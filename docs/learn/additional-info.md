@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: additional-information
 description: Additional Information about Account Abstraction and ERC-4337
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: learn
 description: Learn about Smart Contract Accounts vs EOAs.
 
@@ -29,8 +29,8 @@ Smart Accounts offer several advantages over EOAs that make them more suitable f
 ## Honoring the Legacy of EOAs as Ethereum Evolves
 Externally Owned Accounts (EOAs) have played a crucial role in developing the Ethereum ecosystem and have enabled users to participate in the network since its inception. EOAs have allowed for the easy transfer of Ether and other tokens on the Ethereum network and have allowed users to interact with decentralized applications (dApps) simply and intuitively. The ease of use and accessibility of EOAs has been instrumental in driving the initial growth of the Ethereum ecosystem and have helped to build a strong community around the technology.
 
-However, as the Ethereum ecosystem has grown and matured, it has become clear that EOAs have some limitations that make it difficult to support the mass adoption of the technology. EOAs need more programmability and flexibility of smart contracts, and are well-suited for more complex use cases that require the execution of custom code or the management of more complex financial instruments.
+However, as the Ethereum ecosystem has grown and matured, it has become clear that EOAs have some limitations that make it difficult to support the mass adoption of the technology. EOAs need more programmability and flexibility to make them well-suited for more complex use cases that require the execution of custom code or the management of more complex financial instruments.
 
-As a result, the Ethereum ecosystem has begun to move away from EOAs and towards smart contracts, which are programmable accounts that can execute code on the Ethereum network. Smart contracts offer a wide range of functionality and flexibility, and can be used to build complex decentralized applications that can manage assets, execute code, and interact with other smart contracts on the network.
+As a result, the Ethereum ecosystem has begun to move away from EOAs and towards smart contract accounts, which are programmable accounts that can execute code on the Ethereum network. Smart contracts account offer a wide range of functionality and flexibility, and can be used to build complex decentralized applications that can manage assets, execute code, and interact with other smart contracts on the network.
 
-While the move towards smart contracts has been necessary to support the growth of the Ethereum ecosystem and enable mass adoption of the technology, it is important to remember the important role that EOAs have played in developing the technology. EOAs have been instrumental in building the Ethereum community and enabled users to participate in the network from the beginning. While the focus has shifted towards smart contracts, EOAs will continue to play an important role in the Ethereum ecosystem and will remain an essential tool for interacting with the network.
+While the move towards smart contracts account has been necessary to support the growth of the Ethereum ecosystem and enable mass adoption of the technology, it is important to remember the important role that EOAs have played in developing the technology. EOAs have been instrumental in building the Ethereum community and enabled users to participate in the network from the beginning. While the focus has shifted towards smart contracts accounts, EOAs will continue to play an important role in the Ethereum ecosystem and will remain an essential tool for interacting with the network.
