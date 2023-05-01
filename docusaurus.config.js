@@ -95,13 +95,18 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/opnode',
-            label: 'GitHub',
+            href: 'https://hackmd.io/@V00D00-child/SyXKL6Kmn',
+            label:'Our Proposal',
             position: 'right',
           },
           {
-            label: 'ERC-4337',
-            href: 'https://eips.ethereum.org/EIPS/eip-4337',
+            label: 'Join our Community',
+            href: 'https://t.me/+eUGda3KIND4zMjRh',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/opnode',
+            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -122,8 +127,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/',
+                label: 'Telegram',
+                href: 'https://t.me/+eUGda3KIND4zMjRh',
               },
               {
                 label: 'Twitter',

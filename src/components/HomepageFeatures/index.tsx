@@ -13,7 +13,14 @@ const FeatureList: FeatureItem[] = [
     title: 'Easy to Use',
     Svg: require('@site/static/img/easy-to-use.svg').default,
     description: (
-      <>OpNode is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration.</>
+      <>OpNode is easy to set up and use, with a simple Docker-based runtime environnement that requires minimal configuration.</>
+    ),
+  },
+  {
+    title: 'Standalone Bundler',
+    Svg: require('@site/static/img/multi-client-support.svg').default,
+    description: (
+      <>OpNode is a standalone Bundler that does not require you to be a block builder (run Ethereum client) to participate in the Bundler p2p network. Enabling any actor to participate promotes Decentralization.</>
     ),
   },
   {
@@ -21,13 +28,6 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/compliant.svg').default,
     description: (
       <>OpNode's bundler is fully compliant with the ERC-4337. Our bundler is highly performant, allowing for efficient and reliable transaction processing.</>
-    ),
-  },
-  {
-    title: 'Multi-client support',
-    Svg: require('@site/static/img/multi-client-support.svg').default,
-    description: (
-      <>OpNode is compatible with multiple Ethereum clients, enabling greater bundler diversity and resilience.</>
     ),
   },
 ];
