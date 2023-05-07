@@ -12,10 +12,9 @@ import { PopupButton } from '@typeform/embed-react'
 ## Why is OpNode Needed?
 The Ethereum ecosystem has grown significantly over the past few years, with more and more applications built on the network. However, this growth has also increased the complexity around users managing EOA. With the introduction of [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337), the Ethereum ecosystem aims to allow users to use smart contract wallets containing arbitrary verification logic instead of EOAs as their primary account. The use of smart contracts can greatly improve the blockchain user experience and lay the foundation for features such as social recovery and gasless transactions.
 
-One of the key challenges facing the mass adoption of ERC-4337 is the need for Bundler diversity. ERC-4337 infrastructure must allow any Bundler to participate in including account-abstracted user operations to make the infrastructure decentralized. 
+One of the crucial components of the ERC-4337 is bundlers, which are the infrastructure of Account Abstraction. The ERC-4337 Bundler ecosystem needs bundler diversity and the ability to allow any actor to participate effortlessly in the bundling process. The more bundlers nodes participating in the Bundler network, the more decentralized and censorship-resistant the account abstraction layer can be.
 
-We have developed OpNode, a TypeScript Bundler implementation compatible with multiple Ethereum clients, to address this challenge. OpNode is fully compliant with ERC-4337 and highly performant, enabling greater bundler diversity for the Ethereum network. With OpNode, builders can benefit from a more resilient and decentralized account abstraction infrastructure, equipping them will tools to handle future challenges of mass adoption.
-
+We are actively supporting the development of an ERC-4337 standalone bundler to address the challenges that face the ERC-4337 ecosystem. By taking advantage of the growing ecosystem around ERC-4337 and making an open-source bundler, we can support a decentralized, secure account abstraction layer, thus promoting the adoption of account abstraction for developers and users.
 ## What is OpNode?
 OpNode is open-source and freely available for builders in the Ethereum ecosystem. It supports out-of-the-box modes catering to various use cases and preferences.
 
