@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopnode_docs=self.webpackChunkopnode_docs||[]).push([[715],{1089:(e,n,l)=>{l.r(n),l.d(n,{default:()=>a});var t=l(7294),c=l(7676);const u={i8:"1.0.2"};function a(){return t.createElement(c.Z,null,t.createElement("main",null,t.createElement("h1",null,"v",u.i8)))}}}]);
