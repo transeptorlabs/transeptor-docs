@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Standalone Bundler',
     Svg: require('@site/static/img/multi-client-support.svg').default,
     description: (
-      <>OpNode is a standalone Bundler that does not require you to be a block builder (run Ethereum client) to participate in the Bundler p2p network. Enabling any actor to participate promotes Decentralization.</>
+      <>OpNode is a standalone Bundler that does not require you to be a block builder to participate in the Bundler p2p network. Enabling any actor to participate promotes Decentralization.</>
     ),
   },
   {
