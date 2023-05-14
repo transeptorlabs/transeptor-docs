@@ -12,7 +12,7 @@ Transeptor is an open source project that welcomes contributions from anyone in 
 **We appreciate any contributions, big or small, and thank you for taking the time to help make our project better.**
 
 ## How to Contribute
-1. Clone the repo to your local machine. `git clone https://github.com/Transeptor/transeptor-docs.git`
+1. Clone the repo to your local machine. `git clone https://github.com/transeptorlabs/transeptor-docs.git`
 2. Install dependencies with `npm install`.
 3. Create a new branch for your changes with `git checkout -b my-branch-name`.
 4. Make your changes and commit them with descriptive commit messages.
