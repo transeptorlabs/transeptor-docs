@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 id: architecture
-description: OpNode ERC-4337 High-level Architecture
+description: Transeptor ERC-4337 High-level Architecture
 
 title: 🏗️ Architecture 
 ---

@@ -6,21 +6,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'OpNode',
+  title: 'Transeptor',
   tagline: 'The Next Generation of Blockchain Wallet Infrastructure is Here', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 
   // Set the production url of your site here
-  url: 'https://opnode.io',
+  url: 'https://transeptor.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'opnode', // Usually your GitHub org/user name.
-  projectName: 'opnode-docs', // Usually your repo name.
+  organizationName: 'transeptor', // Usually your GitHub org/user name.
+  projectName: 'transeptor-docs', // Usually your repo name.
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
@@ -57,7 +57,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-B5K3TF153M',
+          trackingID: 'G-Y9DB6P7JFZ',
           anonymizeIP: true,
         },
       }),
@@ -68,7 +68,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/opnode-social-card.jpg',
+      image: 'img/transeptor.jpg',
       metadata: [{name: 'keywords', content: 'bundler, erc-4337, account abstraction, smart contract account, ethereum'}],
       docs: {
         sidebar: {
@@ -80,7 +80,7 @@ const config = {
         title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/brand/opnode.png',
+          src: 'img/brand/transeptor.png',
         },
         items: [
           {
@@ -105,7 +105,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/opnode',
+            href: 'https://github.com/transeptor',
             label: 'GitHub',
             position: 'right',
           },
@@ -132,7 +132,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/OpNode',
+                href: 'https://twitter.com/transeptor',
               },
             ],
           },
@@ -141,12 +141,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/OpNode',
+                href: 'https://github.com/transeptor',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} OpNode`,
+        copyright: `Copyright © ${new Date().getFullYear()} Transeptor`,
       },
       prism: {
         theme: lightCodeTheme,

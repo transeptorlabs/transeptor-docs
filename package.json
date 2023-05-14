@@ -1,8 +1,8 @@
 {
-  "name": "opnode-docs",
+  "name": "transeptor-docs",
   "version": "1.0.2",
   "private": true,
-  "description": "OpNode Docs",
+  "description": "transeptor Docs",
   "keywords": [
     "ERC-4337",
     "Account Abstraction",
