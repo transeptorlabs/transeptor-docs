@@ -11,9 +11,9 @@
     "Ethereum"
   ],
   "author": {
-    "name": "Idris Bowman",
+    "name": "Transeptor Labs",
     "email": "bowmanidris95@gmail.com",
-    "url": "https://www.idrisbowman.com"
+    "url": "https://transeptor"
   },
   "scripts": {
     "docusaurus": "docusaurus",
