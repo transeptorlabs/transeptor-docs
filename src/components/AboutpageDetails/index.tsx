@@ -15,7 +15,7 @@ export default function AboutpageDetails(): JSX.Element {
             <div className="col col-6">
               <h2>Our driving force</h2>
               <p>
-                At OpNode, we believe in a future where blockchain technology is accessible to everyone and can empower builders to create a better world. We achieve this by building wallet infrastructure that makes it easy for developers and users to participate in the Ethereum network and develop decentralized applications. We aim to make the Ethereum network more accessible and scalable, helping to drive mass adoption of blockchain technology.
+                At Transeptor, we believe in a future where blockchain technology is accessible to everyone and can empower builders to create a better world. We achieve this by building wallet infrastructure that makes it easy for developers and users to participate in the Ethereum network and develop decentralized applications. We aim to make the Ethereum network more accessible and scalable, helping to drive mass adoption of blockchain technology.
               </p>
               <div>
               <p>Join us in building a more accessible, decentralized, and transparent future for all!</p>

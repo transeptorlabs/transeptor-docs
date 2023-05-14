@@ -12,10 +12,10 @@ export default function About(): JSX.Element {
   return (
     <Layout
       title={`About`}
-      description={`OpNode is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}>
+      description={`Transeptor is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}>
       <Head>
         <meta name="twitter:title" content={`About`}/>
-        <meta name="twitter:description" content={`OpNode is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}/>
+        <meta name="twitter:description" content={`Transeptor is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem.`}/>
       </Head>
       <main>
         <AboutpageHero />
