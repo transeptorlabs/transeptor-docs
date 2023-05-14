@@ -45,5 +45,5 @@ Transeptor is easy to set up and use, with a simple Docker-based deployment proc
 
 
 ## Contact us
-1. Open an issue of Transeptor [Github](https://github.com/transeptor)
-2. Tweet us on [Twitter](https://twitter.com/transeptor)
+1. Open an issue of Transeptor [Github](https://github.com/transeptorlabs/transeptor-bundler)
+2. Tweet us on [Twitter](https://twitter.com/transeptorlabs)

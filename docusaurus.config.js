@@ -105,7 +105,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/transeptor',
+            href: 'https://github.com/transeptorlabs/transeptor-bundler',
             label: 'GitHub',
             position: 'right',
           },
@@ -132,7 +132,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/transeptor',
+                href: 'https://twitter.com/transeptorlabs',
               },
             ],
           },
