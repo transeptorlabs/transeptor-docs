@@ -8,7 +8,7 @@ title: Additional Information
 
 This page provides additional information to learn more about Account Abstraction and ERC-4337. 
 
-## Documention Sources
+## Documentation Sources
 - [The road to account abstraction](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap)
 - [ERC-4337: Account Abstraction Using Alt Mempool](https://eips.ethereum.org/EIPS/eip-4337)
 
