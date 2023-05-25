@@ -20,7 +20,7 @@ Overall, Modular design is a powerful tool that can help to create maintainable,
 1. Dapps allow users to send user operations from ERC-4337 compatible wallets to the ETH RPC API endpoint as JSON-RPC requests.
 2. The Bundler node will broadcast received user operations and retrieves other user operations by connection to other bundlers' in the p2p network.
 3. The Bundler node connects to an ETH client(execution client) to retrieve information about Ethereum accounts (balances, stake/deposit info, etc.). It will also use the ETH client to simulate user operation by making calls to the debug and trace namespace.
-4. The Bundler node will retrieve user operations from the mempool, create bundle transactions, and send them to Flashbots service.
-5. The Flashbots service will protect the bundle transaction from front-running and allow block builders to propose to the Ethereum network.
+4. The Bundler node will retrieve user operations from the mempool, create bundle transactions.
+5. The bundle transactions will be sent on-chain using Flashbots service, or eth_sendRawTransactionConditional to protect the bundle transaction from front-running and allow block builders to propose to the Ethereum network.
 
 See roadmap [here](https://hackmd.io/@V00D00-child/SyXKL6Kmn#Project-StatusRoadmap-) 
