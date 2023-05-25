@@ -16,3 +16,7 @@
 - ## 1.0.3 - Site Release(05-14-2023)
 🚀 **New Feature**
 - Change project name
+
+- ## 1.0.4 - Site Release(05-25-2023)
+🚀 **New Feature**
+- Spelling and new architecture design

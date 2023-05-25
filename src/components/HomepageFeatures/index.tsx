@@ -13,21 +13,21 @@ const FeatureList: FeatureItem[] = [
     title: 'Easy to Use',
     Svg: require('@site/static/img/easy-to-use.svg').default,
     description: (
-      <>Transeptor is easy to set up and use, with a simple Docker-based runtime environnement that requires minimal configuration.</>
+      <> By utilizing the Docker containerization platform, Transeptor ensures a hassle-free setup.</>
     ),
   },
   {
-    title: 'Standalone Bundler',
+    title: 'Optimal performance',
     Svg: require('@site/static/img/multi-client-support.svg').default,
     description: (
-      <>Transeptor is a standalone Bundler that does not require you to be a block builder to participate in the Bundler p2p network. Enabling any actor to participate promotes Decentralization.</>
+      <>Transeptor is highly performant, allowing for efficient and reliable transaction processing.</>
     ),
   },
   {
     title: 'ERC-4337 compliant',
     Svg: require('@site/static/img/compliant.svg').default,
     description: (
-      <>Transeptor's bundler is fully compliant with the ERC-4337. Our bundler is highly performant, allowing for efficient and reliable transaction processing.</>
+      <>Transeptor is fully compliant with the ERC-4337.</>
     ),
   },
 ];

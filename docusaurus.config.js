@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Transeptor',
-  tagline: 'The Next Generation of Blockchain Wallet Infrastructure is Here', 
+  tagline: 'An modular Typscript ERC-4337 Open Source Bundler, designed with a strong emphasis on performance', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 

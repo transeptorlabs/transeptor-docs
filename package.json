@@ -1,6 +1,6 @@
 {
   "name": "transeptor-docs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "transeptor Docs",
   "keywords": [
@@ -25,7 +25,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "spellcheck": "cspell \"./src**/*\"",
+    "spellcheck:docs": "cspell \"./docs**/*\""
   },
   "dependencies": {
     "@docusaurus/core": "2.3.1",

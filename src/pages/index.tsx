@@ -30,9 +30,9 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A modular Typescript implementation of an ERC-4337 Bundler.">
+      description="An modular Typscript ERC-4337 Open Source Bundler, designed with a strong emphasis on performance.">
         <meta name="twitter:title" content={`${siteConfig.title}`}/>
-        <meta name="twitter:description" content="A modular Typescript implementation of an ERC-4337 Bundler."/>
+        <meta name="twitter:description" content="An modular Typscript ERC-4337 Open Source Bundler, designed with a strong emphasis on performance."/>
       {/* TODO: Add  og:image, twitter:image*/}
       <HomepageHeader />
       <main>
