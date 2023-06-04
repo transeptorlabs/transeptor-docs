@@ -7,7 +7,7 @@ title:  ERC-4337 Overview
 ---
 
 ## What is ERC-4337
-ERC-4337 is a higher-layer infrastructure for Ethereum to allow account abstraction. This will allows user to use a smart contract account to handle all network interactions. ERC-4337 introduces a new transaction called a UserOperation. Users will send signed UserOperations to a network of nodes called a Bundlers. Bundlers, will send these transactions to Entrypoint smart contract to execute the UserOperations. ERC-4337 also introduces paymaster smart contracts to allow transaction sponsorship. Paymaster User can allow paymaster. With paymaster users have gasless transactions or pay gas fees with ERC-20 tokens.
+ERC-4337 is a higher-layer infrastructure for Ethereum to allow account abstraction. This will allows user to use a smart contract account to handle all network interactions. ERC-4337 introduces a new transaction called a UserOperation. Users will send signed UserOperations to a network of nodes called a Bundlers. Bundlers, will send these transactions to Entrypoint smart contract to execute the UserOperations. ERC-4337 also introduces paymaster smart contracts to allow transaction sponsorship. With paymaster users have gasless transactions or pay gas fees with ERC-20 tokens.
 
 ### UserOperation Type
 Users create a UserOperation for actions they want their account to perform.
