@@ -20,14 +20,14 @@ const FeatureList: FeatureItem[] = [
     title: 'Optimal performance',
     Svg: require('@site/static/img/multi-client-support.svg').default,
     description: (
-      <>Transeptor is highly performant, allowing for efficient and reliable transaction processing.</>
+      <>Transeptor is performant, allowing for efficient and reliable transaction processing.</>
     ),
   },
   {
     title: 'ERC-4337 compliant',
     Svg: require('@site/static/img/compliant.svg').default,
     description: (
-      <>Transeptor is fully compliant with the ERC-4337.</>
+      <>Transeptor is compliant with the ERC-4337.</>
     ),
   },
 ];

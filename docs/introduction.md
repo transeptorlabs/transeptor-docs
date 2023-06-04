@@ -7,32 +7,30 @@ title: 👋 Introduction
 ---
 import { PopupButton } from '@typeform/embed-react'
 
-*"Transeptor is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem."*
+*"Transeptor is more than a [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337) Bundler - a vision for a more accessible and inclusive blockchain ecosystem."*
 
-## Why is Transeptor Needed?
-The Ethereum ecosystem has grown significantly over the past few years, with more and more applications built on the network. However, this growth has also increased the complexity around users managing EOA. With the introduction of [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337), the Ethereum ecosystem aims to allow users to use smart contract wallets containing arbitrary verification logic instead of EOAs as their primary account. The use of smart contracts can greatly improve the blockchain user experience and lay the foundation for features such as social recovery and gasless transactions.
+## Why is Transeptor Needed? 
+More applications are being built on the Ethereum ecosystem, expanding its reach. But, this growth has made it more complex for users to manage their EOA (Externally Owned Accounts). A new proposal called ERC-4337 aims to simplify this process by allowing users to use smart contract wallets instead of EOAs.
 
-One of the crucial components of the ERC-4337 is bundlers, which are the infrastructure of Account Abstraction. The ERC-4337 Bundler ecosystem needs bundler diversity and the ability to allow any actor to participate effortlessly in the bundling process. The more bundlers nodes participating in the Bundler network, the more decentralized and censorship-resistant the account abstraction layer can be.
+One of the crucial components of the ERC-4337 is Bundlers, which are the infrastructure of Account Abstraction. The ERC-4337 Bundler ecosystem needs bundler diversity and the ability to allow any actor to take part in the bundling process. We are supporting the development of an ERC-4337 bundler to increase Bundler diversity in the ERC-4337 ecosystem.
 
-We are actively supporting the development of an ERC-4337 standalone bundler to address the challenges that face the ERC-4337 ecosystem. By taking advantage of the growing ecosystem around ERC-4337 and making an open-source bundler, we can support a decentralized, secure account abstraction layer, thus promoting the adoption of account abstraction for developers and users.
 ## What is Transeptor?
-Transeptor, an ERC-4337 Open Source Bundler, designed with a strong emphasis on performance. It offers preconfigured modes readily available to meet a wide range of use cases and user preferences.
+The Transeptor offers a wide range of bundling mode to to fit your needs.
 
-1. **Mempool support**: Determines the visibility of the UserOperations. The private mode will make visible to the Bundler that receives the UserOperation, while the public mode will allow the UserOperation to be propagated through the p2p network of Bundler nodes.
+1. **Mempool support**: Determines the visibility of the UserOperations.
 2. **EVM network**: The networks that the Bundler supports.
-3. **Block building strategy**: The strategy used by the Bundler to send bundled UseOperations on-chain while protecting them from front-running.
-4. **Front-running protection**: Does the strategy to send bundles to protect the UseOperations from protecting them from front-running
+3. **Block building strategy**: The strategy used by the Bundler to send bundled UseOperations.
+4. **Front-running protection**: Does the strategy to send bundles protect the UseOperations from front-running.
 
 | Mode | Mempool support | EVM Networks | Block building strategy | Front-running protection |
 | --- | --- | --- | --- | --- |
-| **private | Private mempool of UserOperation | All EVM clients | Uses eth_sendRawTransaction RPC | no |
-| **searcher | *p2p public mempool or private mempool | Ethereum and Goerli | Uses https://docs.flashbots.net/flashbots-auction/searchers/quick-start to send bundled UserOperations to block builders | yes |
+| **base | Private mempool of UserOperation | All EVM clients | Uses eth_sendRawTransaction RPC | no |
+| **searcher | *p2p public mempool or private mempool | Ethereum and Goerli | Uses [Flashbots](https://docs.flashbots.net/flashbots-auction/searchers/quick-start) to send bundled UserOperations to block builders | yes |
 | **conditional | *p2p public mempool or private mempool | EVM clients that support conditional transactions | Uses [eth_sendRawTransactionConditional](https://notes.ethereum.org/@yoav/SkaX2lS9j) RPC | yes |
 
-*all modes can be run with p2p enabled excluding private mode. Private mode should not be run in production since it does not protect bundled transaction from from front-running.
+*You can run with p2p enabled excluding private mode. Base mode should not run in production since it does not protect bundled transaction from front-running.
 
 **active development
-
 ## How can I use Transeptor?
 Transeptor is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration. To use Transeptor, follow these steps:
 
@@ -45,7 +43,7 @@ Transeptor is easy to set up and use, with a simple Docker-based deployment proc
 - RAM: [TBD]
 - Storage: [TBD]
 
-Please ensure that your system meets these hardware requirements to ensure optimal performance and functionality of the software.
+Please ensure that your system meets these hardware requirements.
 
 <div className="button-left">
     <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"

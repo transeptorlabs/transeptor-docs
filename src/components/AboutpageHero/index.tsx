@@ -10,7 +10,7 @@ export default function AboutpageHero(): JSX.Element {
     <div className="container">
       <div className="row">
         <div className="col">
-          <h2 className={styles.quote}>"Transeptor is more than just a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem."</h2>
+          <h2 className={styles.quote}>"Transeptor is more than a ERC-4337 Bundler - a vision for a more accessible and inclusive blockchain ecosystem."</h2>
         </div>
       </div>
     </div>
