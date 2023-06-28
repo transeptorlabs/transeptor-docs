@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-id: learn
+# id: learn
 description: Learn about Smart Contract Accounts vs EOAs.
 
 title: EOAs vs Smart Accounts

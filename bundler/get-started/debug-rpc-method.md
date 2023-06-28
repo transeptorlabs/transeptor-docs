@@ -1,9 +1,9 @@
 ---
-sidebar_position: 6
-id: rpc-method
+sidebar_position: 3
+# id: bundler-rpc-method-debug
 description: Describe the RPC method
 
-title: debugRPC methods 
+title: Debug RPC methods 
 ---
 
 ## `debug` namespace

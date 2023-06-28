@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: additional-information
+# id: additional-information
 description: Additional Information about ERC-4337
 
 title: Additional Information

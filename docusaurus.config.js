@@ -41,17 +41,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          breadcrumbs: true,
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:'https://github.com/secureauth3',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          path: 'bundler',
+          routeBasePath: "bundler",
+          breadcrumbs: false,
+          sidebarPath: require.resolve('./bundler-sidebar.js'),
+          editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -65,39 +59,41 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      ({
+        id: "snap",
+        path: "snap",
+        routeBasePath: "snap",
+        editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
+        sidebarPath: require.resolve("./snap-sidebar.js"),
+        breadcrumbs: false,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/transeptor.jpg',
       metadata: [{name: 'keywords', content: 'bundler, erc-4337, account abstraction, smart contract account, ethereum'}],
-      docs: {
-        sidebar: {
-          hideable: true,
-          autoCollapseCategories: true,
-        },
-      },
       navbar: {
-        title: '',
+        title: 'Transeptor Labs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/brand/transeptor.png',
         },
         items: [
           {
-            to: '/about',
+            to:'bundler',
             position: 'left',
-            label: 'About',
+            label: 'Bundler',
           },
           {
-            type: 'doc',
-            docId: 'intro',
+            to:'snap',
             position: 'left',
-            label: 'Docs',
-          },
-          {
-            href: 'https://hackmd.io/@V00D00-child/SyXKL6Kmn',
-            label:'Our Proposal',
-            position: 'right',
+            label: 'Snap',
           },
           {
             label: 'Join our Community',

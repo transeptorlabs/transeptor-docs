@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-id: erc4337-overview
+# id: erc4337-overview
 description: High level overview of ERC-4337.
 
 title:  ERC-4337 Overview

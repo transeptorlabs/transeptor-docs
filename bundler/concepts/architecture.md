@@ -1,6 +1,6 @@
 ---
-sidebar_position: 4
-id: architecture
+sidebar_position: 1
+# id: bundler-architecture
 description: Transeptor ERC-4337 High-level Architecture
 
 title: 🏗️ Architecture 

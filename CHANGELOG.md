@@ -20,3 +20,6 @@
 - ## 1.0.4 - Site Release(05-25-2023)
 🚀 **New Feature**
 - Spelling and new architecture design
+
+- ## 1.0.5 - Site Release(06-28-2023)
+🚀 **New Feature**

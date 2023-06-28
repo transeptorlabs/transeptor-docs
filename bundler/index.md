@@ -1,13 +1,11 @@
 ---
-sidebar_position: 1
-id: intro
-description: 5 minutes to learn the most important Transeptor concepts.
+# sidebar_position: 1
+# id: bundler-intro
+# description: 5 minutes to learn the most important Transeptor concepts.
 
-title: 👋 Introduction
+title: Introduction
 ---
 import { PopupButton } from '@typeform/embed-react'
-
-*"Transeptor is more than a [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337) Bundler - a vision for a more accessible and inclusive blockchain ecosystem."*
 
 ## Why is Transeptor Needed? 
 More applications are being built on the Ethereum ecosystem, expanding its reach. But, this growth has made it more complex for users to manage their EOA (Externally Owned Accounts). A new proposal called ERC-4337 aims to simplify this process by allowing users to use smart contract wallets instead of EOAs.
@@ -15,7 +13,7 @@ More applications are being built on the Ethereum ecosystem, expanding its reach
 One of the crucial components of the ERC-4337 is Bundlers, which are the infrastructure of Account Abstraction. The ERC-4337 Bundler ecosystem needs bundler diversity and the ability to allow any actor to take part in the bundling process. We are supporting the development of an ERC-4337 bundler to increase Bundler diversity in the ERC-4337 ecosystem.
 
 ## What is Transeptor?
-The Transeptor offers a wide range of bundling mode to to fit your needs.
+Transeptor is a modular Typescript ERC-4337 Bundler, designed with a strong emphasis on performance. It offers a wide range of bundling mode to to fit your needs.
 
 1. **Mempool support**: Determines the visibility of the UserOperations.
 2. **EVM network**: The networks that the Bundler supports.
@@ -31,29 +29,6 @@ The Transeptor offers a wide range of bundling mode to to fit your needs.
 *You can run with p2p enabled excluding private mode. Base mode should not run in production since it does not protect bundled transaction from front-running.
 
 **active development
-## How can I use Transeptor?
-Transeptor is easy to set up and use, with a simple Docker-based deployment process that requires minimal configuration. To use Transeptor, follow these steps:
-
-1. Download the Transeptor docker image.
-2. Run the Transeptor docker image in a docker container.
-3. Start using Transeptor to bundle user operation.
-
-### Hardware requirements
-- CPU: Minimum of 2 CPU cores
-- RAM: [TBD]
-- Storage: [TBD]
-
-Please ensure that your system meets these hardware requirements.
-
-<div className="button-left">
-    <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--lg"
-        onReady={() => {
-            console.log('form ready')
-        }}>
-        Sign up for our waiting list ⏱️
-    </PopupButton>
-</div>
-
 
 ## Contact us
 1. Open an issue of Transeptor [Github](https://github.com/transeptorlabs/transeptor-bundler)
