@@ -257,6 +257,12 @@ Example Response:
 
 <hr></hr>
 
+
+## `debug` namespace
+*All RPC methods listed here require our Bundler to be 100% compliant as an [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) Bundler.*
+
+<hr></hr>
+
 ### Error Response Codes
 Below are error codes for `eth_sendUserOperation` , `eth_estimateUserOperationGas` operations.
 

@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Transeptor',
-  tagline: 'A modular Typescript ERC-4337 Open Source Bundler, designed with a strong emphasis on performance', 
+  tagline: 'Unlock the Full Potential of Account Abstraction', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 
@@ -43,7 +43,7 @@ const config = {
         docs: {
           path: 'bundler',
           routeBasePath: "bundler",
-          breadcrumbs: false,
+          breadcrumbs: true,
           sidebarPath: require.resolve('./bundler-sidebar.js'),
           editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
         },
@@ -68,7 +68,18 @@ const config = {
         routeBasePath: "snap",
         editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
         sidebarPath: require.resolve("./snap-sidebar.js"),
-        breadcrumbs: false,
+        breadcrumbs: true,
+      }),
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      ({
+        id: "learn",
+        path: "learn",
+        routeBasePath: "learn",
+        editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
+        sidebarPath: require.resolve("./learn-sidebar.js"),
+        breadcrumbs: true,
       }),
     ],
   ],
@@ -81,8 +92,8 @@ const config = {
       navbar: {
         title: 'Transeptor Labs',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/brand/transeptor.png',
+          alt: 'Transeptor labs Logo',
+          src: 'img/brand/logo-2.png',
         },
         items: [
           {
@@ -94,6 +105,11 @@ const config = {
             to:'snap',
             position: 'left',
             label: 'Snap',
+          },
+          {
+            to:'learn',
+            position: 'left',
+            label: 'Learn',
           },
           {
             label: 'Join our Community',
@@ -114,8 +130,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro',
+                label: 'Bundler',
+                to: 'bundler',
+              },
+              {
+                label: 'Snap',
+                to: 'snap',
               },
             ],
           },

@@ -1,11 +1,9 @@
 ---
-# sidebar_position: 1
-# id: bundler-intro
-# description: 5 minutes to learn the most important Transeptor concepts.
+sidebar_position: 1
+description: 5 minutes to learn the most important Transeptor concepts.
 
 title: Introduction
 ---
-import { PopupButton } from '@typeform/embed-react'
 
 ## Why is Transeptor Needed? 
 More applications are being built on the Ethereum ecosystem, expanding its reach. But, this growth has made it more complex for users to manage their EOA (Externally Owned Accounts). A new proposal called ERC-4337 aims to simplify this process by allowing users to use smart contract wallets instead of EOAs.
