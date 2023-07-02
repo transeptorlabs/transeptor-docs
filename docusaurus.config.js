@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Transeptor',
-  tagline: 'A modular Typescript ERC-4337 Open Source Bundler, designed with a strong emphasis on performance', 
+  tagline: 'Unlock the Full Potential of Account Abstraction', 
   favicon: 'img/brand/favicon.png',
   staticDirectories: ['public', 'static'],
 
@@ -41,17 +41,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'bundler',
+          routeBasePath: "bundler",
           breadcrumbs: true,
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:'https://github.com/secureauth3',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: require.resolve('./bundler-sidebar.js'),
+          editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -65,39 +59,57 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      ({
+        id: "snap",
+        path: "snap",
+        routeBasePath: "snap",
+        editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
+        sidebarPath: require.resolve("./snap-sidebar.js"),
+        breadcrumbs: true,
+      }),
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      ({
+        id: "learn",
+        path: "learn",
+        routeBasePath: "learn",
+        editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
+        sidebarPath: require.resolve("./learn-sidebar.js"),
+        breadcrumbs: true,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/transeptor.jpg',
       metadata: [{name: 'keywords', content: 'bundler, erc-4337, account abstraction, smart contract account, ethereum'}],
-      docs: {
-        sidebar: {
-          hideable: true,
-          autoCollapseCategories: true,
-        },
-      },
       navbar: {
-        title: '',
+        title: 'Transeptor Labs',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/brand/transeptor.png',
+          alt: 'Transeptor labs Logo',
+          src: 'img/brand/logo-2.png',
         },
         items: [
           {
-            to: '/about',
+            to:'bundler',
             position: 'left',
-            label: 'About',
+            label: 'Bundler',
           },
           {
-            type: 'doc',
-            docId: 'intro',
+            to:'snap',
             position: 'left',
-            label: 'Docs',
+            label: 'Snap',
           },
           {
-            href: 'https://hackmd.io/@V00D00-child/SyXKL6Kmn',
-            label:'Our Proposal',
-            position: 'right',
+            to:'learn',
+            position: 'left',
+            label: 'Learn',
           },
           {
             label: 'Join our Community',
@@ -118,8 +130,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/intro',
+                label: 'Bundler',
+                to: 'bundler',
+              },
+              {
+                label: 'Snap',
+                to: 'snap',
               },
             ],
           },
