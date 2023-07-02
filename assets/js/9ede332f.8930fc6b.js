@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktranseptor_docs=self.webpackChunktranseptor_docs||[]).push([[486],{2103:e=>{e.exports=JSON.parse('{"title":"Concepts","slug":"/category/concepts","permalink":"/learn/category/concepts","navigation":{"previous":{"title":"Resources","permalink":"/learn/"},"next":{"title":"ERC-4337 Overview","permalink":"/learn/concepts/erc-4337"}}}')}}]);
