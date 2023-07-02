@@ -10,7 +10,7 @@ Transeptor is easy to set up and use, with a simple Docker-based deployment proc
 :::important Transeptor is in Alpha
 Please note that the current version of the software is classified as Alpha. While the software is fully functional, it is important to be aware that it may contain bugs, incomplete features, and undergo frequent updates.
 
-We invite you to actively participate in the development of this software. You can contribute by providing feedback, reporting issues, or even submitting code changes. Visit our [GitHub repository](https://github.com/transeptorlabs/transeptor-bundler) to get involved.
+We invite you to actively participate in the development of this software. You can contribute by providing feedback, reporting issues, or even submitting code changes. Visit our [GitHub repository](https://github.com/transeptorlabs/transeptor-bundler/issues) to get involved.
 :::
 
 ## Hardware requirements

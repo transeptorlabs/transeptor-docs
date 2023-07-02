@@ -14,7 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">Transeptor Labs developer documentation</h1>
+        <h1 className="hero__title">Transeptor Labs builder documentation</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <Link className="button button--secondary button--lg" to="/bundler">
           Get started
@@ -29,9 +29,9 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Transeptor Labs developer documentation">
+      description="Transeptor Labs builder documentation">
         <meta name="twitter:title" content={`${siteConfig.title}`}/>
-        <meta name="twitter:description" content="Transeptor Labs developer documentation"/>
+        <meta name="twitter:description" content="Transeptor Labs builder documentation"/>
       {/* TODO: Add  og:image, twitter:image*/}
       <HomepageHeader />
       <main>

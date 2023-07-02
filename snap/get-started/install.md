@@ -27,6 +27,10 @@ Flask. Running multiple instances of MetaMask in the same browser profile breaks
 ## Install the ERC-4337 Relayer Snap
 We are currently in the process of finalizing the development and preparing for the launch. To ensure you don't miss out on being among the first to experience the software, we invite you to join our waiting list.
 
+:::important Note
+We invite you to actively participate in the development of this software. You can contribute by providing feedback, reporting issues, or even submitting code changes. Visit our [GitHub repository](https://github.com/transeptorlabs/erc-4337-relayer/issues) to get involved.
+:::
+
 <div className="button-left">
     <PopupButton id="fEY6nXV1" style={{ fontSize: 20 }} className="button button--primary button--md"
         onReady={() => {

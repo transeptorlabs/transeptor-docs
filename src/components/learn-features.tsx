@@ -22,7 +22,7 @@ export default function LearnFeatures(): JSX.Element {
   return (
     <section className="container margin-top--lg">
       <h2 className="text--left">Fundamentals of ERC-4337</h2>
-      <p>Explore the core principles, features, and benefits of ERC-4337 as our expert guide takes you through the fundamentals. Whether you're a developer, blockchain enthusiast, or simply curious about token standards, this video is an excellent resource to expand your knowledge.</p>
+      <p>Explore the core principles, features, and benefits of ERC-4337 as our expert guide takes you through the fundamentals. Whether you're a developer, blockchain enthusiast, or simply curious about token standards, this is an excellent resource to expand your knowledge.</p>
       <div className="row">
         {CardListLearn.map((props, idx) => (<Card key={idx} {...props} />))}
       </div>

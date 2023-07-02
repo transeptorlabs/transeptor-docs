@@ -30,7 +30,7 @@ export default function BundlerFeatures(): JSX.Element {
   return (
     <section className="container margin-top--lg">
       <h2 className="text--left">Support ERC-4337 by running a bundler node</h2>
-      <p>Bundlers are crucial components of the ERC-4337. Increase Bundler diversity by running our open source ERC-4337 Bundler Transeptor.Transeptor is a modular Typescript ERC-4337 Bundler, designed with a strong emphasis on performance. It offers a wide range of bundling mode to to fit your needs.</p>
+      <p>Bundlers are crucial components of the ERC-4337. Increase Bundler diversity by running our open source ERC-4337 Bundler Transeptor. Transeptor is a modular Typescript ERC-4337 Bundler, designed with a strong emphasis on performance. It offers a wide range of bundling mode to to fit your needs.</p>
       <div className="row">
         {CardListBundler.map((props, idx) => (<Card key={idx} {...props} />))}
       </div>

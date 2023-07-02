@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
-description:  ERC-4337 Relalyer Snap High-level Architecture
+description:  ERC-4337 Relayer Snap High-level Architecture
 
-title: 🏗️ Architecture 
+title: 🏗️ ERC-4337 Relayer Snap Architecture 
 ---
 
-## ERC-4337 Relalyer Snap Architecture
+coming soon...

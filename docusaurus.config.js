@@ -157,12 +157,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/transeptor',
+                href: 'https://github.com/transeptorlabs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Transeptor`,
+        copyright: `Copyright © ${new Date().getFullYear()} Transeptor Labs`,
       },
       prism: {
         theme: lightCodeTheme,
