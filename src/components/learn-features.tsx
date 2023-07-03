@@ -3,14 +3,14 @@ import Card, { type CardItem } from './Card/Card';
 
 const CardListLearn: CardItem[] = [
   {
-    title: "👨‍💻 ERC-4337 Overview",
+    title: "📘 ERC-4337 Overview",
     link: "/learn/concepts/erc-4337",
     description: (<>
       Learn how to install and manage ERC-4337 Relayer Snap.
     </>),
   },
   {
-    title: "💻📱 EOAs vs Smart Accounts",
+    title: "⚔️ EOAs vs Smart Accounts",
     link: "/learn/concepts/eoa-vs-smart-contract-account",
     description: (<>
       Learn how to connect ERC-4337 Relayer smart account to your dapp.

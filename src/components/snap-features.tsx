@@ -3,14 +3,14 @@ import Card, { type CardItem } from './Card/Card';
 
 const CardListSnap: CardItem[] = [
   {
-    title: "👨‍💻 Install Transeptor",
+    title: "⚙️ Install Transeptor",
     link: "/snap/get-started/install",
     description: (<>
       Learn how to install and manage ERC-4337 Relayer Snap.
     </>),
   },
   {
-    title: "💻📱 Connect Smart Account",
+    title: "📱📒 Connect Smart Account",
     link: "/snap/how-to/connect-sc-account",
     description: (<>
       Learn how to connect ERC-4337 Relayer smart account to your dapp.

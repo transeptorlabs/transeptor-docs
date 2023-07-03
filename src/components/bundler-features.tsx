@@ -3,14 +3,14 @@ import Card, { type CardItem } from './Card/Card';
 
 const CardListBundler: CardItem[] = [
   {
-    title: "👨‍💻 Install Transeptor",
+    title: "⚙️ Install Transeptor",
     link: "/bundler/get-started/install",
     description: (<>
       Everything you need to get started running Transeptor bundler node.
     </>),
   },
   {
-    title: "💻📱 Command line Options",
+    title: "⌨️ Command line Options",
     link: "/bundler/concepts/command-line-options",
     description: (<>
       List of all command line arguments supported by the bundler.
