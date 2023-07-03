@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Transeptor',
   tagline: 'Unlock the Full Potential of Account Abstraction', 
-  favicon: 'img/brand/favicon.png',
+  favicon: 'img/brand/logo-2.png',
   staticDirectories: ['public', 'static'],
 
   // Set the production url of your site here
