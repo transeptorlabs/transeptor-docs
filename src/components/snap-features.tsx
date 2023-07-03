@@ -18,7 +18,7 @@ const CardListSnap: CardItem[] = [
   },
   {
     title: "🌐 Send User Operation",
-    link: "/bundler/get-started/rpc-method",
+    link: "/snap/how-to/send-user-operation",
     description: (<>
       Learn how to let your dapp user sign and send user operations.
     </>),
