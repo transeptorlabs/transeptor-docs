@@ -5,4 +5,6 @@ description: Learn how manage Smart account entry point withdrawals
 title: Manage Smart account entry point withdrawals
 ---
 
-Coming soon...
+:::important Coming soon
+This section is still being worked on. We will provide more information on how make withdraws to the entry point contract soon.
+:::

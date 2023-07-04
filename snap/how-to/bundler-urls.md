@@ -5,4 +5,6 @@ description: Learn to manage the Bundler Urls for your Smart account
 title: Manage Bundler Urls
 ---
 
-Coming soon...
+:::important Coming soon
+This section is still being worked on. We will provide more information on how configure the snaps bundler urls soon.
+:::
