@@ -1,0 +1,70 @@
+---
+sidebar_position: 1
+description: Learn how connect a Smart account to a dapp
+
+title: Connect to Smart account
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Invoke the `sc_account` JSON-RPC method to retrieve the users smart contract account. This method is only callable by websites.
+
+**Parameters:**
+
+This JSON-RPC method does not require any parameters.
+
+**Returns:**
+
+Returns an object that contains infomation about the smart account.
+
+| Property Name |     Type    |              Description             |
+|:--------------:|:-----------:|:------------------------------------:|
+| address        | `string`    | The address of the smart account     |
+| balance        | `BigNumber` | The ETH balance of the smart account |
+
+**Example**
+<Tabs
+  defaultValue="js"
+  values={[
+      { label: 'JavaScript', value: 'js', },
+      { label: 'Result', value: 'js-result', },
+  ]}
+>
+<TabItem value="js">
+
+```javascript
+const serializedResponse = await ethereum.request({
+    method: 'wallet_invokeSnap',
+    params: {
+        snapId: 'npm:@transeptor/erc-4337-relayer',
+        request: { method: 'sc_account', params: [] },
+    },
+});
+
+// To unserialize the JSON-RPC response back into a JavaScript object.
+const unserializedResponse = JSON.parse(serializedResponse); 
+
+console.log(unserializedResponse);
+```
+
+</TabItem>
+<TabItem value="js-result">
+
+```javascript
+{
+    address: "0x76B446d851d32F032666770c62884a4b158de912",
+    balance: {type: 'BigNumber', hex: '0x00'},
+    deposit: {type: 'BigNumber', hex: '0x00'},
+    entryPoint: "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
+    factoryAddress: "0x9406Cc6185a346906296840746125a0E44976454",
+    index: {type: 'BigNumber', hex: '0x00'},
+    nonce: {type: 'BigNumber', hex: '0x00'},
+    ownerAddress: "0x427a3c8046c3192A4Ae614347e63a64a1d712E2e",
+    userOpHashesPending: [],
+    userOperationReceipts: [],
+}
+```
+
+</TabItem>
+</Tabs>
