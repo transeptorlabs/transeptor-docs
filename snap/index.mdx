@@ -7,60 +7,122 @@ title: Introduction
 
 import CardList from '@site/src/components/CardList'
 
-## Why ERC-4337 Relayer Snap? 
+## Why SmartHub Snap? 
 Account abstraction introduces new core components to make managing crypto simple. 
 It has potential, but it can be difficult for builders and users to use all its core components. 
 Users should not take on the burden of understanding Account abstraction. 
 Wallet providers should serve as the gateway into this new paradigm of smart account management. 
 The transition from using EOAs to smart accounts must be seamless. 
-ERC-4337 Relayer does not change ERC-4337 but rather sits between dapps and ERC-4337 infrastructure to manage interaction with ERC-4337 core components(Entrypoint, Paymasters, Smart Account).
+SmartHub does not change ERC-4337 but rather sits between dapps and ERC-4337 infrastructure to manage interaction with ERC-4337 core components(Entrypoint, Paymasters, Smart Account).
 
-## What is ERC-4337 Relayer Snap?
-ERC-4337 Relayer is a snap that makes it easy for builders and MetaMask wallet users to use ERC-4337 without dealing with its complexity.
+## What is SmartHub Snap?
+SmartHub is a snap that makes it easy for builders and MetaMask wallet users to use ERC-4337 without dealing with its complexity.
 
-## How does ERC-4337 Relayer Snap work?
-The snap adds extra features to MetaMask by including RPC methods that work with ERC-4337 core components. Please take a look at the [ERC-4337 Relayer Snap Architecture page](/snap/concepts/architecture).
+## How does SmartHub Snap work?
+SmartHub snap adds extra features to MetaMask by including custom RPC methods that work with ERC-4337 core components. 
+Allowing users to easily create and manage their smart accounts. Dapps can invoke these methods using the `wallet_invokeSnap` RPC method. 
+The Snap must be installed and the caller must have the permission to communicate with the Snap, or the request is rejected. Please take a look at the [SmartHub Snap Architecture page](/snap/concepts/architecture) if you want to learn more about how SmartHub Snap works under the hood.
 
-## What can you do with ERC-4337 Relayer Snap 
-ERC-4337 Relayer Snap add new API methods to MetaMask, to add support for ERC-4337 blockchain protocol. Here are some of the things you can do with ERC-4337 Relayer Snap.
+## What can you do with SmartHub Snap 
+SmartHub Snap add new rpc methods to MetaMask, to add support for ERC-4337 blockchain protocol. Here are all the rpc methods exposed by SmartHub Snap.
 
-Features include:
+### Bundler eth and debug rpc methods
+
+Wraps all the eth and debug methods for [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337).
+
 <CardList
   items={[
     {
       icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/bundler-eth-debug",
+      title: "Bundler eth and debug method", 
+      description: "Relay eth and debug rpc methods to a ERC-4337 bundler."
+    }
+  ]}
+/>
+
+### MetaMask keyring API
+
+We use MetaMask keyring to create and manage accounts that are natively supported within the extension, appearing in MetaMask's UI, and can be used with dapps. Dapps can invoke these methods using the `KeyringSnapRpcClient` instance.
+
+<CardList
+  items={[
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/keyring-api",
+      title: "Keyring API", 
+      description: "Create and manage accounts that are natively supported within the extension"
+    },
+  ]}
+/>
+
+### ERC-4337 account management rpc methods
+
+Custom RPC method that allows dapps to manage smart accounts.
+
+<CardList
+  items={[
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/notify",
+      title: "Notify", 
+      description: "Notifies users with a custom copyable message via snap_dialog alert UI."
+    },
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/get-next-request-id",
+      title: "Next request Id", 
+      description: "Get the next keyring request ID."
+    },
+    {
+      icon: require("./assets/features/notifications.png").default,
       href: "snap/how-to/connect-sc-account",
-      title: "Smart Account Connect", 
-      description: "Connect your Smart account to dApps."
-    },
-    {
-      icon: require("./assets/features/notifications.png").default,
-      href: "snap/how-to/manage-deposits",
-      title: "Manage Deposits", 
-      description: "Manage Smart account entry point deposits."
-    },
-    {
-      icon: require("./assets/features/notifications.png").default,
-      href: "snap/how-to/manage-withdrawals",
-      title: "Manage Withdraws", 
-      description: "Manage Smart account entry point withdraws."
-    },
-    {
-      icon: require("./assets/features/notifications.png").default,
-      href: "snap/how-to/bundler-urls",
-      title: "Manage Bundler Urls", 
-      description: "Manage bundler urls for your Smart account."
+      title: "Connect smart contract account", 
+      description: "Returns information about a smart account with the given keyring Account Id."
     },
       {
       icon: require("./assets/features/notifications.png").default,
-      href: "snap/how-to/send-user-operation",
-      title: "Send User Operations", 
-      description: "Send user operations with your Smart account."
+      href: "snap/how-to/clear-activity-data",
+      title: "Clear activity data", 
+      description: "Clears all the smart account activity data from the snap storage."
+    },
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/add-bundler-url",
+      title: "Add bundler url", 
+      description: "Add a new bundler url to the snap storage."
+    },
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/get-bundler-urls",
+      title: "Get bundler urls", 
+      description: "Returns a list of all the bundler urls in the snap storage."
+    },
+  ]}
+/>
+
+### Build user operation rpc methods
+
+Custom RPC method that helps dapps build ERC-4337 user operations.
+
+<CardList
+  items={[
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/get-user-op-call-data",
+      title: "Get userOp callData", 
+      description: "Generates the call data for the given user operation."
+    },
+    {
+      icon: require("./assets/features/notifications.png").default,
+      href: "snap/how-to/estimate-creation-gas",
+      title: "Estimate creation gas", 
+      description: "Estimates the gas cost for creating a new counter factual smart account."
     }
   ]}
 />
 
 ## Questions?
-If you have any questions on how ERC-4337 Relayer Snap works or want to propose new feature.
-1. Open an issue of Transeptor [Github](https://github.com/transeptorlabs/transeptor-bundler)
+If you have any questions on how SmartHub Snap works or want to propose new feature.
+1. Open an issue of SmartHub [Github](https://github.com/transeptorlabs/smarthub-snap)
 2. Tweet us on [Twitter](https://twitter.com/transeptorlabs)

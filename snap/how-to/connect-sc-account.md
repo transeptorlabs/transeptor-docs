@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 description: Learn how connect a Smart account to a dapp
 
 title: Connect to Smart account
@@ -18,10 +18,18 @@ This JSON-RPC method does not require any parameters.
 
 Returns an object that contains infomation about the smart account.
 
-| Property Name |     Type    |              Description             |
-|:--------------:|:-----------:|:------------------------------------:|
-| address        | `string`    | The address of the smart account     |
-| balance        | `BigNumber` | The ETH balance of the smart account |
+| Property Name  |    Type     |                         Description                         |
+| :------------: | :---------: | :---------------------------------------------------------: |
+|    initCode    |  `string`   |             The init code of the smart account              |
+|    address     |  `string`   |              The address of the smart account               |
+|    balance     | `BigNumber` |            The ETH balance of the smart account             |
+|    deposit     | `BigNumber` | The ETH deposit that smart account has with the entry point |
+|   entryPoint   |  `string`   |   The entry point address that the smart account is using   |
+| factoryAddress |  `string`   | The address of the factory that deployed the smart account  |
+|     index      | `BigNumber` |            The ETH balance of the smart account             |
+|     nonce      | `BigNumber` |               The nonce of the smart account                |
+| owner.address  |  `string`   |     The address of the EOA that owns the smart account      |
+| owner.balance  |  `string`   |   The ETH balance of the EOA that owns the smart account    |
 
 **Example**
 <Tabs
@@ -34,11 +42,14 @@ Returns an object that contains infomation about the smart account.
 <TabItem value="js">
 
 ```javascript
-const serializedResponse = await ethereum.request({
+const serializedResponse = await window.ethereum.request({
     method: 'wallet_invokeSnap',
     params: {
-        snapId: 'npm:@transeptor/erc-4337-relayer',
-        request: { method: 'sc_account', params: [] },
+      snapId: 'npm:@transeptor-labs/smarthub-snap',
+      request: {
+        method: 'sc_account',
+        params: [{ 'keyringAccountId' }],
+      },
     },
 });
 
