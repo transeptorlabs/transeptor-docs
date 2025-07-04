@@ -26,9 +26,24 @@ const products: ProductCard[] = [
     link: "/bundler/get-started",
     features: [
       {
+        title: "Installation",
+        link: "/bundler/installation",
+        description: "Install Transeptor bundler using Docker or build from source.",
+      },
+      {
         title: "Features",
         link: "/bundler/configuration/features",
         description: "List of all features supported by Transeptor bundler.",
+      },
+      {
+        title:"Transaction modes",
+        link: "/bundler/configuration/configuration-options#modes",
+        description: "List of all transaction modes supported by Transeptor bundler.",
+      },
+      {
+        title:"Network support",
+        link: "/bundler/configuration/networks",
+        description: "List of all networks supported by Transeptor bundler.",
       },
       {
         title: "Command line Options",

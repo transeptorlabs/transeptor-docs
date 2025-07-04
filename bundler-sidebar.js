@@ -14,6 +14,7 @@ const sidebar = {
   bundlerSidebar: [
     "index",
     "get-started",
+    "installation",
     {
       type: "category",
       label: "Configuration",
