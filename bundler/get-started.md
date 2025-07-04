@@ -5,20 +5,9 @@ description: Quick start guide to get you up and running with Transeptor bundler
 title: Get Started
 ---
 
-## Overview
-
-:::important Transeptor bundler is in Alpha
-Please note that while the software is fully functional, it is important to know that it may undergo frequent updates.
-
-We invite you to actively participate in the development of this software. Visit our [GitHub repository](https://github.com/transeptorlabs/transeptor-bundler/issues) to get involved.
-:::
-
-Transeptor bundler is a high-performance, modular ERC-4337 bundler designed to make smart accounts scalable and usable on Ethereum. It offers a wide range of bundling modes to fit your needs.
-
-
 ## Quick Start
 
-Transeptor bundler is easy to set up with Docker and requires minimal configuration. For this guide, we will walk through running the bundler in `searcher mode` connected to a geth node that comes packed with a ERC-7562 tracer on the Sepolia testnet. See more on the modes that Transeptor bundler supports [here](/bundler/configuration/configuration-options#modes).
+Transeptor bundler is easy to set up with Docker and requires minimal configuration. For this guide, we will walk through running the bundler in `searcher mode` connected to a geth node that comes packed with a ERC-7562 tracer on [Sepolia testnet](https://sepolia.etherscan.io/). See more on the modes that Transeptor bundler supports [here](/bundler/configuration/configuration-options#modes).
 
 - Entrypoint contract v0.8: 
   - [Sepolia testnet](https://sepolia.etherscan.io/address/0x4337084d9e255ff0702461cf8895ce9e3b5ff108)
@@ -31,7 +20,7 @@ Follow the steps below to get started with Transeptor:
 
 ### Start up geth with ERC-7562 tracer
 
-Pull the [ERC-7562](https://eips.ethereum.org/EIPS/eip-7562) image from Docker Hub and start the container. The native tracer is required for full validation during userOp simulation to enforce [ERC-7562: Account Abstraction Validation Rules](https://eips.ethereum.org/EIPS/eip-7562).
+A fully synced geth node must be running alongside the bundler with `debug_traceCall` enabled. Lets get stated by pulling the [ERC-7562: Account Abstraction Validation Rules](https://eips.ethereum.org/EIPS/eip-7562) geth Docker image. The geth node comes equipped with a native tracer to allow the bundler to enforce off-chain transaction validation rules that prevent denial-of-service attacks.
 
 ```shell
 docker run -d --name geth-native-tracer -p 8545:8545 accountabstraction/geth-with-erc7562-tracer \
@@ -58,10 +47,10 @@ docker pull transeptorlabs/bundler:latest
 
 ### Set environment variables
 
-Transeptor requires a set of environment variables to run. Create a `.env` file and add the following variables:
+Transeptor bundler requires a set of environment variables to run. Create a `.env` file and add the following variables:
 ```bash
 # Required
-TRANSEPTOR_ENTRYPOINT_ADDRESS=0x0000000071727De22E5E9d8BAf0edAc6f37da032
+TRANSEPTOR_ENTRYPOINT_ADDRESS=0x4337084d9e255ff0702461cf8895ce9e3b5ff108
 TRANSEPTOR_BENEFICIARY=<address_to_receive_funds>
 TRANSEPTOR_MNEMONIC=<your-mnemonic>
 
@@ -72,7 +61,7 @@ TRANSEPTOR_BLACK_LIST=<address_to_ban_SEPARATED_BY_COMMA>
 
 ### Start Transeptor
 
-With the Geth native tracer node running, you can now start Transeptor. You can pass the path to your `.env` file to the Docker container.
+With the Geth native tracer node running, you can now start Transeptor bundler. You can pass the path to your `.env` file to the Docker container.
 
 - Ensure the signer account is funded with ETH with the desired `minBalance` before starting Bundler.
 
@@ -86,7 +75,7 @@ docker run -d --name transeptor -p 4337:4337 --env-file <path_to_your_.env> tran
   --auto
 ```
 
-Transeptor will start on `http://localhost:4437/rpc`. Run curl command to check if the Transeptor is running:
+Transeptor bundler will start on `http://localhost:4437/rpc`. Run curl command to check if the bundler is running:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -99,12 +88,12 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="result" label="Result">
     ```json
-    {"jsonrpc":"2.0","id":67,"result":"transeptor/0.12.0-alpha.0"}
+    {"jsonrpc":"2.0","id":67,"result":"transeptor/0.13.0-alpha.0"}
     ```
   </TabItem>
 </Tabs>
 
-You are now ready to start bundling userOp on the Sepolia testnet with Transeptor.
+You are now ready to start bundling userOp on the Sepolia testnet.
 
 ## Contact us
 
