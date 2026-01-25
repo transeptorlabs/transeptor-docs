@@ -65,17 +65,6 @@ const config = {
         editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
       },
     ],
-    // [
-      // "@docusaurus/plugin-content-docs",
-      // ({
-      //   id: "learn",
-      //   path: "learn",
-      //   routeBasePath: "learn",
-      //   editUrl: "https://github.com/transeptorlabs/transeptor-docs/edit/main/",
-      //   sidebarPath: require.resolve("./learn-sidebar.js"),
-      //   breadcrumbs: true,
-      // }),
-    // ],
   ],
 
   themeConfig:
